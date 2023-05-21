@@ -1,0 +1,82 @@
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+
+  <xsl:template match="/">
+    <html>
+      <head>
+        <title>Instituto Tecnológico Edix</title>
+        <link rel="stylesheet" type="text/css" href="Actividad.css"></link>
+      </head>
+      <body>
+        <h1>Instituto Tecnológico Edix</h1>
+          <a href="{empresa/@web}">
+            WEB
+         </a>
+        <h2>Empresa</h2>
+        <p><xsl:value-of select="ite/empresa"/></p>
+       
+        <h2>Teléfono</h2>
+        <p><xsl:value-of select="ite/telefono"/></p>
+       
+        <h2>Profesores</h2>
+        <table>
+          <tr>
+            <th>ID</th>
+            <th>Nombre</th>
+          </tr>
+          <xsl:for-each select="ite/profesores/profesor">
+            <tr>
+              <td><xsl:value-of select="@id"/></td>
+              <td><xsl:value-of select="nombre"/></td>
+            </tr>
+          </xsl:for-each>
+        </table>
+       
+        <h2>Director</h2>
+        <p><xsl:value-of select="ite/director/nombre"/></p>
+       
+        <h2>Jefe de Estudios</h2>
+        <p><xsl:value-of select="ite/jefe_estudios/nombre"/></p>
+       
+        <h2>Ciclos</h2>
+        <ul>
+          <xsl:for-each select="ite/ciclos/ciclo">
+            <li>
+              <a href="{@id}">
+                <xsl:value-of select="nombre"/>
+              </a>
+            </li>
+          </xsl:for-each>
+        </ul>
+       
+       
+
+        <form>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" ></input><br></br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" ></input><br></br>
+
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" ></textarea><br></br>
+
+            <input type="submit" value="Enviar"></input><br></br>
+        </form>
+
+        <ul>
+          <xsl:for-each select="ite/redes/red">
+            <li>
+              <a href="{@link}">
+                <xsl:value-of select="nombrered"/>
+              </a>
+            </li>
+          </xsl:for-each>
+        </ul>
+
+
+
+      </body>
+    </html>
+  </xsl:template>
+
+</xsl:stylesheet>
