@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="edix.xsl"?>
+<centros>
+	<centro>
+		<identificacion>	
+            <codigo_centro>28077518</codigo_centro>
+			<denominacion>EDIX</denominacion>
+			<telefono>+34 91 787 39 91</telefono>
+			<correo>secretariaedix@hotmail.com</correo>
+			<pagina_web>https://institutotecnologico.edix.com</pagina_web>
+
+		    <ubicacion>
+			    <autonomia>COMUNIDAD DE MADRID</autonomia>
+                <provincia>Madrid</provincia>
+                <pais>ESPAÑA</pais>
+                <municipio>Madrid</municipio>
+                <localidad>Madrid</localidad>
+                <domicilio>CALLE de Bruno Abundez 48 </domicilio>
+                <codigo_postal>28031</codigo_postal>
+		    </ubicacion>
+            <tipificacion>
+                <naturaleza>Centro Privado</naturaleza>
+                <concertado>No</concertado>
+                <tipo_centro>Centro Privado de Formación Profesional Específica</tipo_centro>
+                <denominacion>Centro Privado de Formación Profesional Específica</denominacion>
+            </tipificacion>
+            <enseñanzas>
+                <grado nombre="Ciclos Formativos de Formación Profesional de Grado Superior (LOE)" >
+                    <familia>INFORMÁTICA Y COMUNICACIONES</familia>
+                    <enseñanza>Desarrollo de Aplicaciones Multiplataforma</enseñanza>
+                    <modalidad>A Distancia</modalidad>
+                    <decretoTitulo año="2010" />
+                </grado>
+                <grado nombre="Ciclos Formativos de Formación Profesional de Grado Superior (LOE)" >
+                    <familia>INFORMÁTICA Y COMUNICACIONES</familia>
+                    <enseñanza>Desarrollo de Aplicaciones Web</enseñanza>
+                    <modalidad>A Distancia</modalidad>
+                    <decretoTitulo año="2010" />
+                </grado>
+                <grado nombre="Ciclos Formativos de Formación Profesional de Grado Superior (LOE)" >
+                    <familia>INFORMÁTICA Y COMUNICACIONES</familia>
+                    <enseñanza>Administración de Sistemas Informáticos en Red</enseñanza>
+                    <modalidad>A Distancia</modalidad>
+                    <decretoTitulo año="2009" />
+                </grado>
+            </enseñanzas>
+            <organigrama>
+                <equipo_directivo>
+                    <director>
+                        <nombre>Chon</nombre>
+                        <despacho>Numero 31, 3ª Planta, Edificio A</despacho>
+                    </director>
+                    <jefe_estudios>
+                        <nombre>Dani</nombre>
+                        <despacho>Numero 27, 2ª Planta, Edificio B</despacho>
+                    </jefe_estudios>
+                </equipo_directivo>
+                <consejo_escolar>
+                </consejo_escolar>
+                <claustro>  
+                    <docente>
+                        <id>1</id>
+                        <nombre>Félix</nombre>
+                    </docente>
+                    <docente>
+                        <id>2</id>
+                        <nombre>Raul</nombre>
+                    </docente>
+                    <docente>
+                        <id>3</id>
+                        <nombre>Raquel</nombre>
+                    </docente>
+                    <docente>
+                        <id>4</id>
+                        <nombre>Tomas</nombre>
+                    </docente>
+                </claustro>
+            </organigrama>
+		</identificacion>
+	</centro>
+</centros>

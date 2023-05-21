@@ -1,0 +1,260 @@
+*{ 
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: 'Roboto', sans-serif;
+	color: #f5f5f5;
+}
+body{
+    background: #000014;
+}
+header{
+	background: #000014;
+	position: sticky;
+	display: flex;
+	top: 0px;
+	justify-content: space-between;
+	align-items: center;
+	height: 62px;
+	padding: 5px 5%;
+	margin: auto;
+}
+.header_title{
+	position: absolute;
+	left: 0;
+	margin-left: 10px; 
+	margin-right: auto; 
+}
+.header_img{
+	width: 73px;
+	margin-left: 20px;
+	transition-duration: 0.6s;
+}
+.header_img:hover{
+	transform: scale(1.08);
+	transition-duration: 0.9s;
+}	
+nav{
+	right: 0px;
+	margin-left: 0px;
+	text-align: center;
+	width: 900px;
+	background: #000014;
+
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+.nav-links{
+	margin-left: -100px;
+	width: 80%;
+	
+	list-style: none;
+	background: #000014;
+}
+.nav-links li{
+	display: inline-block;
+	padding: 0 13px;
+	transition-duration: 1s;
+	
+}
+.nav-links li a{
+	text-decoration: none;
+	color: white;
+	font-size: 16px;
+
+}
+.nav-links li:hover{
+	transform: scale(1.15);
+	transition-duration: 0.9s;
+}
+.header_unir{
+	position: absolute;
+	right: 0;
+	margin-right: 0px;
+	border-left: 1px solid;
+	width: 200px;
+}
+.header_unir_img{
+	height: auto;
+	max-width: 99%;
+}
+.boton{
+	display: none;
+}
+.row-1{	
+	height: 100vh;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-image: url(../img/fondo1.jpg);
+	background-position: center; 
+	background-repeat: no-repeat; 
+	background-size: cover; 
+}
+.col-1{
+	flex-basis: 58%;
+	margin-left: 50px;
+	color: black;
+}
+.col-1 h1{
+	font-size: 50px;
+}
+.col-1 h3{
+	margin-top: 10px;
+}
+.row-2{
+	height: 7	0vh;
+	background: #FBFAF5;
+	padding: 50px;
+	text-align: center;
+}
+.col-profesores{
+	height: 180	0px;
+	background: #FBFAF5;
+	list-style-position: inside;
+	color: black;
+}
+.tabla1{
+	color: pink;
+	margin: 30px;
+	margin-left: auto;
+	margin-right: auto;
+	border-collapse: collapse;
+	width: 100%;
+
+}
+.tabla1 th, .tabla1 td {
+	border: 3px solid #FBFAF5;
+	border-collapse: collapse;
+	padding: 8px;
+	align-items: center;
+	border-radius: 14px;
+  }
+.tabla1 th, td{
+
+}
+.tabla1 th {
+	padding-top: 12px;
+	padding-bottom: 12px;
+	background-color: coral;
+	color: white;
+}
+.tabla1 td {
+	color: black;
+	background-color: #FED8B1;
+}
+p {
+	color: black;
+}
+.h1class{
+	margin: 10px;
+	color: black;
+}
+.h3class{
+	color: black;
+	margin: 10px;
+}
+h3{
+	padding: 0px;
+	margin-bottom: 10px;
+}
+.container-form{
+	background: rgb(93,110,205);
+	background: linear-gradient(56deg, rgba(93,110,205,1) 0%, rgba(253,45,142,1) 100%);
+	
+	width: 100%;
+	max-width: 900px;
+	margin: auto;
+	display: grid;
+	grid-template-columns: repeat(2,1fr);
+	grid-gap: 50px;
+	margin-top: 20px;
+	border-radius: 10px;
+}
+.container-form form .campo, textarea{
+	color: black;
+	width:80%;
+	padding: 10px 10px;
+	font-size: 10px;
+	border: 1px solid gray;
+	margin: 10px;
+	margin-bottom: 20px;
+	border-radius: 3px;
+	outline: 0px;
+}
+.container-form form textarea{
+	max-width: 80%;
+	min-width: 80%;
+	min-height: 140px;
+	max-height: 150px;
+}
+.container-form .btn-enviar{
+	padding: 15px;
+	font-size: 15px;
+	border: none;
+	outline: 0px;
+	background: orange;
+	border-radius: 3px;
+	cursor: pointer;
+	margin-bottom: 20px;
+}
+.info-form{
+	text-align: left;
+	padding: 12px;
+}
+.container-form p{
+	margin-bottom: 15px;
+
+}
+.container-form a{
+	font-size: 17px;
+	display: inline-block;
+	text-decoration: none;
+	width: 100%;
+	margin-bottom: 8px;
+}
+#tel-icon, #mess-icon, #proeduca-icon{
+	width: 13px;
+}
+
+@media (max-width: 940px){
+	header{
+		background: #000014;
+
+	}
+	.header_title{
+		position: absolute;
+		left: 0;
+		right: 0;
+		margin-left: auto; 
+		margin-right: auto; 
+		width: 200px;
+	}
+    nav{
+		display: none;
+    }
+	.header_unir{
+		display: none;
+	}
+	.boton{
+		display: block;
+		position: absolute;
+		right: 0;
+		margin-right: 10px;
+	}
+	.menu-icon{	
+		margin-left: 10px;
+		width: 40px;
+		display: block;
+	}
+	.col-1 h2{
+		font-size: 40px;
+	}
+	.col-1 h3{
+		font-size: 20px;
+	}
+	.container-form{
+		display: inline-block;
+	}
+}
